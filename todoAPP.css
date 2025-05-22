@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    background-color: rgb(226, 226, 96);
+    border-radius: 25px;
+}
+
+#name {
+    color: white;
+    font-family: "Chewy", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+#pompompurin {
+    width: 30%;
+    margin-bottom: 5px;
+}
+
+#input {
+    height: 35px;
+    font-size: 25px;
+    font-family: "Chewy", system-ui;
+    font-style: normal;
+    font-weight: 50;
+    width: 300px;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 4px;
+    padding: 0px;
+    border: 2px solid gray;
+    color: rgb(226, 226, 96);
+}
+
+#input::placeholder {
+    color: rgb(224, 224, 201);
+}
+
+#buttons {
+    display: flex;
+    align-items: center;        
+    justify-content: center;    
+    width: 300px;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+#buttons button {
+    font-family: "Chewy", system-ui;
+    font-style: normal;
+    font-weight: 50;
+    width: 100px;
+    margin-right: 5px;
+    height: 25px;
+    border-radius: 25px;
+    color: white;
+}
+
+#add {
+    background-color: rgb(255, 196, 87);
+    border: 2px solid rgb(220, 143, 1);
+}
+
+#delete {
+    background-color: rgb(237, 85, 85);
+    border: 2px solid rgb(199, 9, 9);
+}
+
+ul {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    row-gap: 8px;
+    padding: 0;
+}
+
+ul div {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    color: rgb(218, 218, 44);
+    background-color: white;
+    font-family: "Chewy", system-ui;
+    font-style: normal;
+    font-weight: 50;
+    align-items: center;
+    width: 250px;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 0px 0px 0px 0px;
+}
+
+#tasklist button {
+    background: none;
+    border: none;
+}
+
+ul li div p {
+  margin: 0;
+}
