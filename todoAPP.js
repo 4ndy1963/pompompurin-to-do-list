@@ -18,7 +18,6 @@ class Task {
 }
 
 let taskID = 0
-let taskCounter = 0
 
 const inputEl = document.getElementById("input")
 const addBtn = document.getElementById("add")
@@ -28,7 +27,6 @@ const taskListEl = document.getElementById("tasklist")
 function createTask() {
     let description = inputEl.value
     let task = "task" + taskID++
-    taskCounter++
     return new Task(task, description)
 }
 
@@ -70,7 +68,6 @@ deleteBtn.addEventListener("click", function() {
     remove(referenceInDB)
     let arr = []
     taskID = 0
-    taskCounter = 0
     addToList(arr, arr)
 })
 
@@ -89,7 +86,6 @@ taskListEl.addEventListener("click", function(task) {
                 remove(ref(database, `tasks/${targetId}`))
             }
         })
-        taskCounter--
     }
 })
 
